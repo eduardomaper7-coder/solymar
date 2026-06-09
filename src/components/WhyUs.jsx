@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const slides = [
   {
@@ -92,29 +93,29 @@ const WhyUs = () => {
             </div>
 
             <div className="mt-8 flex flex-col gap-3">
-  <div className="flex flex-col gap-3 sm:flex-row">
-    <a
-      href="/#contacto"
-      className="inline-flex justify-center rounded-full bg-[#C8923B] px-8 py-4 text-base font-bold text-white shadow-lg transition hover:bg-[#A87325]"
-    >
-      Contactar
-    </a>
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="/#contacto"
+                  className="inline-flex justify-center rounded-full bg-[#C8923B] px-8 py-4 text-base font-bold text-white shadow-lg transition hover:bg-[#A87325]"
+                >
+                  Contactar
+                </a>
 
-    <a
-      href="tel:922441744"
-      className="inline-flex justify-center rounded-full border-2 border-[#C8923B] px-8 py-4 text-base font-bold text-[#C8923B] transition hover:bg-[#C8923B] hover:text-white"
-    >
-      Llamar ahora
-    </a>
-  </div>
+                <a
+                  href="tel:922441744"
+                  className="inline-flex justify-center rounded-full border-2 border-[#C8923B] px-8 py-4 text-base font-bold text-[#C8923B] transition hover:bg-[#C8923B] hover:text-white"
+                >
+                  Llamar ahora
+                </a>
+              </div>
 
-  <a
-    href="/equipo"
-    className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-base font-bold text-[#A87325] shadow-[0_12px_30px_rgba(200,146,59,0.15)] transition hover:-translate-y-0.5 hover:bg-[#FBF8F2]"
-  >
-    Conoce a nuestro equipo →
-  </a>
-</div>
+              <Link
+                to="/equipo"
+                className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-base font-bold text-[#A87325] shadow-[0_12px_30px_rgba(200,146,59,0.15)] transition hover:-translate-y-0.5 hover:bg-[#FBF8F2]"
+              >
+                Conoce a nuestro equipo →
+              </Link>
+            </div>
           </div>
         </div>
 
